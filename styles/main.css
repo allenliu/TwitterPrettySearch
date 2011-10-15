@@ -1,0 +1,146 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+
+p {
+  margin: 0;
+  padding: 3px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.unselectable {
+  moz-user-select: none;
+  khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+#wrapper {
+  position: absolute;
+  top: 15%;
+  left: 64px;
+  width: 100%;
+}
+
+#bigtweet {
+	font-family: Helvetica, Arial;
+  width: 50%;
+}
+
+#bigtweet .text {
+	display:block;
+	font-family:Helvetica, Arial;
+	font-size:32px;
+	font-weight:bold;
+	color: #fff;
+	margin:0 0 5px 0;
+	padding:0;
+}
+
+#bigtweet .user {
+	display:block;
+	font-size:32px;
+}
+
+#bigtweet .user img {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+}
+
+.tweet {
+  position: absolute;
+  font-family: Helvetica, Arial;
+  font-size: 12px;
+  width: 180px;
+  overflow: hidden;
+}
+
+#search input[type='textarea'] {
+  display: block;
+  float: left;
+  margin: 0 5px 0 0;
+  padding: 3px;
+  border: solid 1px #000;
+}
+
+*:focus {outline: none;}
+
+
+#back {
+  display: block;
+  float: left;
+}
+
+#status {
+  clear: both;
+}
+
+.triangle-border {
+	position:absolute;
+	padding:1em;
+	margin:1em 0 3em;
+	border:5px solid #5a8f00;
+	color:#fff;
+	background:#000;
+	/* css3 */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+
+/* creates the smaller  triangle */
+.triangle-border:after {
+	content:"";
+	position:absolute;
+	border-style:solid;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+    width:0;
+    
+}
+
+/* creates the larger triangle */
+.triangle-border-left-before {
+  content:"";
+  display: block;
+  position: absolute;
+	bottom:auto;
+  border-style: solid;
+	border-width:15px 30px 15px 0;
+  padding: 0;
+  margin: 0;
+  width: 0;
+}
+
+/* creates the smaller  triangle */
+.triangle-border:after {
+	top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+	bottom:auto;
+	left:-21px; /* value = - border-left-width - border-right-width */
+	border-width:9px 21px 9px 0;
+	border-color:transparent #000;
+}
+
+#fps {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+#debug {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+}
